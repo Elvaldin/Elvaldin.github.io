@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oswaldo -- Desarollador de software</title>
+    <meta name="description" content="Portafolio de Oswaldo — web, móvil y Python. Proyectos reales desplegados.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="wrap">
+            <nav>
+                <a class="logo" href="#inicio">oswaldo<span class="lol">.dev</span></a>
+                <ul class="navlinks">
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap" id="inicio">
+
+        <!-- HERO -->
+         <section class="hero">
+            <div>
+                <span class="eyebrow"><span class="dot"></span>DISPONIBLE PARA PROYECTOS</span>
+                <h1>Construyo apps web, móviles y herramientas en <span class="accent">Python</span>.</h1>
+                <p class="lead">Soy Oswaldo, desarrollador de software con formación en informática. Me gusta llevar proyectos de la idea al despliegue: desde apps de finanzas hasta herramientas de redes.</p>
+                <div class="hero-actions">
+                    <a class="boton boton-solid" href="#proyectos">Ver proyectos</a>
+                    <a class="boton boton-ghost" href="#contacto">Contáctame</a>
+                </div>
+            </div>
+
+            <!-- Diagrama de toología: cada nodo es un proyecto -->
+             <div class="topo">
+                <svg viewBox="0 0 400 340" role="img" aria-label="Diagrama de red: mis proyectos conectados a oswaldo.dev">
+
+                    <line class="edge" x1="200" y1="170" x2="200" y2="52"></line>
+                    <line class="edge" x1="200" y1="170" x2="338" y2="120"></line>
+                    <line class="edge" x1="200" y1="170" x2="322" y2="262"></line>
+                    <line class="edge" x1="200" y1="170" x2="78" y2="262"></line>
+                    <line class="edge" x1="200" y1="170" x2="62" y2="120"></line>
+
+                    <g class="node" data-target="p-mayorinn" tabindex="0" role="link" aria-label="Ir a MayorInn">
+                        <circle class="body" cx="200" cy="52" r="30"></circle>
+                        <text x="200" y="49">Mayor</text><text x="200" y="61">Inn</text>
+                    </g>
+
+                    <g class="node" data-target="p-finly" tabindex="0" role="link" aria-label="Ir a Finly">
+                        <circle class="body" cx="338" cy="120" r="30"></circle>
+                        <text x="338" y="124">Finly</text>
+                    </g>
+
+                    <g class="node" data-target="p-bot" tabindex="0" role="link" aria-label="Ir al Bot de Telegram">
+                        <circle class="body" cx="322" cy="262" r="30"></circle>
+                        <text x="322" y="259">Bot</text><text x="322" y="271">IA</text>
+                    </g>
+
+                    <g class="node" data-target="p-subnet" tabindex="0" role="link" aria-label="Ir a la Calculadora de Subredes">
+                        <circle class="body" cx="78" cy="262" r="30"></circle>
+                        <text x="78" y="259">Subnet</text><text x="78" y="271">Calc</text>
+                    </g>
+
+                    <g class="node center">
+                        <circle class="body" cx="200" cy="170" r="42"></circle>
+                        <text x="200" y="167">Oswaldo</text><text x="200" y="180">.dev</text>
+                    </g>
+
+                </svg>
+                <p class="topo-caption">// topología de proyectos - haz clic en un nodo</p>
+             </div>
+         </section>
+
+        <!-- PROYECTOS -->
+         <section id="proyectos">
+            <div class="sec-head">
+                <h2>Proyectos</h2>
+                <span class="tag"></span>
+            </div>
+
+            <div class="grid">
+                <article class="card reveal" id="p-mayorinn">
+                    <span class="i">accesibilidad · adultos mayores</span>
+                    <h3>MayorInn</h3>
+                    <p>App educativa con enfoque en accesibilidad para que los adultos mayores aprendan tareas bancarias y eviten fraudes. Incluye lectura por voz, modo de alto contraste y tamaño de letra ajustable. Proyecto en desarrollo con demo en línea.</p>
+                    <div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="links"><a href="https://elvaldin.github.io/mayorinn/" target="_blank" rel="noopener">Ver demo →</a><a href="https://github.com/Elvaldin/mayorinn" target="_blank" rel="noopener">Código</a></div>
+                </article>
+
+                <article class="card reveal" id="p-finly">
+                    <span class="i">finanzas personales · móvil</span>
+                    <h3>Finly</h3>
+                    <p>App móvil de finanzas personales para registrar gastos y visualizar hábitos. Publicación gestionada en App Store, incluyendo firma de builds y revisión de lineamientos de Apple.</p>
+                    <div class="stack"><span>React Native</span><span>Expo</span></div>
+                    <div class="links"><a href="https://apps.apple.com/mx/app/finly/id6772070452" target="_blank" rel="noopener">Ver app →</a></div>
+                </article>
+
+                <article class="card reveal" id="p-bot">
+                    <span class="i">IA conversacional</span>
+                    <h3>Bot de Telegram con IA</h3>
+                    <p>Bot conversacional integrado con la API de Claude. Maneja memoria multi-turno con historial por usuario, para conversaciones con contexto dentro de Telegram.</p>
+                    <div class="stack"><span>Python</span><span>Claude API</span><span>Telegram bot API</span></div>
+                    <div class="links"><a href="https://t.me/TheCortexxBot" target="_blank" rel="noopener">Probar →</a><a href="https://github.com/Elvaldin/telegram-claude-bot" target="_blank" rel="noopener">Código →</a></div>
+                </article>
+
+                <article class="card reveal" id="p-subnet">
+                    <span class="i">herramienta de redes</span>
+                    <h3>Calculadora de subredes IPv4</h3>
+                    <p>Herramienta de subnetting que soporta clases A - E y VLSM, construida con la librería estándar de Python como app web con Flask y Gunicorn.</p>
+                    <div class="stack"><span>Python</span><span>Flask</span><span>gunicorn</span><span>Redes</span></div>
+                    <div class="links"><a href="https://calculadora-subredes.onrender.com" target="_blank" rel="noopener">Probar →</a><a href="https://github.com/Elvaldin/Calculadora-subredes" target="_blank" rel="noopener">Código →</a></div>
+                    <p class="hint">Nota: hosting gratuito — la primera carga puede tardar ~50s si el servicio estaba inactivo.</p>
+                </article>
+            </div>
+         </section>
+
+        <!-- HABILIDADES -->
+         <section id="habilidades">
+            <div class="sec-head">
+                <h2>Habilidades</h2>
+                <span class="tag">stack.conf</span>
+            </div>
+            <div class="skills"> 
+                <div class="skill-block reveal">
+                    <h3>WEB</h3>
+                    <ul><li>HTML, CSS, JavaScript</li><li>Flask</li></ul>
+                </div>
+
+                <div class="skill-block reveal">
+                    <h3>MÓVIL</h3>
+                    <ul><li>React Native</li><li>Publicación en App Store</li></ul>
+                </div>
+
+                <div class="skill-block reveal">
+                    <h3>PYTHON</h3>
+                    <ul><li>Bots e integraciones con IA</li><li>Scripts y automatización</li></ul>
+                </div>
+
+                <div class="skill-block reveal">
+                    <h3>REDES</h3>
+                    <ul><li>Subnetting, VLSM, CIDR</li></ul>
+                </div>
+            </div>
+         </section>
+
+        <!-- SOBRE MÍ -->
+         <section id="sobre-mi">
+            <div class="sec-head">
+                <h2>Sobre mí</h2>
+                <span class="tag">whoami</span>
+            </div>
+            <div class="about-box reveal">
+                <p>Estudio ingeniería en computación. Me gusta construir cosas que la gente realmente use: he desplegado proyectos para clientes reales y publicado apps en la tienda de App Store. Lo que más disfruto es tomar un problema concreto, como que un adulto mayor pueda usar su banca sin miedo, y convertirlo en una herramienta simple.</p>
+
+                <div class="ping" aria-hidden="true">
+                    <span class="cmd">$ ping oswaldo.dev</span><br>
+                    <span class="dim">64 bytes:</span> web <br>
+                    <span class="dim">64 bytes:</span> móvil <br>
+                    <span class="dim">64 bytes:</span> python <br>
+                    <span class="dim">0% packet loss</span>
+                </div>
+            </div>
+         </section> 
+
+         <!-- CONTACTO -->
+          <section id="contacto" class="contact">
+            <h2>¿Trabajamos juntos?</h2>
+            <p>escríbeme y te respondo pronto.</p>
+            <div class="hero-actions" style="justify-content: center">
+                <a class="boton boton-solid" href="mailto:oswalmora.mora@gmail.com">Enviar correo</a>
+                <a class="boton boton-ghost" href="https://github.com/Elvaldin" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </section>
+    </main>
+
+    <footer>
+        <p>© 2026 oswaldo.dev - hecho con HTML, CSS y JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
